@@ -17,3 +17,6 @@ let mySprite = sprites.create(img`
     . . c b d d d d d 5 5 5 b b . . 
     . . . c c c c c c c c b b . . . 
     `, SpriteKind.Player)
+game.onUpdateInterval(5000, function () {
+    mySprite.setVelocity(5, 5)
+})
